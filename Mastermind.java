@@ -15,11 +15,11 @@ public class Mastermind {
 			int digit3= (int) (Math.random()*6)+1; 
 			int digit4= (int) (Math.random()*6)+1; 
 			
-			int target= digit1+(10*digit2)+(100*digit3)+(1000*digit4); // a random 4-digit code is generated
+			int target= digit1+(10*digit2)+(100*digit3)+(1000*digit4); // a random 4-digit target value is generated
 
 			for (int i=0;i<10;i++) //the player has up to ten tries to guess
 			{
-				int g= guess(); //the player can enter their guess
+				int g= guess(); 
 				s="";
 				int pluscount=0;
 				int minuscount=0;
